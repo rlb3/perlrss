@@ -1,11 +1,3 @@
-//
-//  Rss.m
-//  perlrss
-//
-//  Created by Robert Boone on 6/29/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
-//
-
 #import "Rss.h"
 
 
@@ -18,7 +10,7 @@
     [super dealloc];
 }
 
--(NSArray *) pull {
+-(Rss *) pull {
     NSURLRequest *theRequest;
     NSData *urlData;
     NSError *error;
