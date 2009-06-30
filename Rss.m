@@ -54,6 +54,7 @@
     }
     
     [doc release];
+    return self;
 }
 
 @end

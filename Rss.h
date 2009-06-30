@@ -15,6 +15,6 @@
 
 @property (nonatomic, retain) NSArray *itemNodes;
 
--(NSArray *)pull;
+-(Rss *) pull;
 
 @end
