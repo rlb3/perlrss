@@ -3,31 +3,11 @@
 
 int main (int argc, const char * argv[]) {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    NSMutableArray *stash = [[NSMutableArray alloc] init];
-
-    Rss *feed = [[Rss alloc] init];
+    NSMutableArray    *data = [[[Rss alloc] init] fetchData];
     
-    for (NSXMLElement *line in [[feed pull] itemNodes]) {
-        if ([[line stringValue] isNotEqualTo:@"search.cpan.org"]) {
-            NSMutableArray *tempArray = [NSMutableArray arrayWithArray:[[line stringValue] componentsSeparatedByString:@"-"]];
-            NSString *version = [tempArray lastObject];
-            [tempArray removeLastObject];
+    NSLog(@"%@", data);
 
-            NSString *moduleName = [tempArray componentsJoinedByString:@"::"];
-            NSMutableDictionary *tempDict = [[NSMutableDictionary alloc] init];
-
-            [tempDict setObject:moduleName forKey:@"name"];
-            [tempDict setObject:version forKey:@"version"];
-
-            [stash addObject:tempDict];
-
-            [tempDict release];
-        }
-    }
-
-    NSLog(@"%@", stash);
-
-    [stash release];
+    [data release];
     [pool drain];
     return 0;
 }

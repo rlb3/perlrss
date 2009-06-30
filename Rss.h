@@ -5,8 +5,9 @@
     NSArray *itemNodes;
 }
 
-@property (nonatomic, retain) NSArray *itemNodes;
+@property (readonly) NSArray *itemNodes;
 
 -(Rss *) pull;
+-(NSMutableArray *) fetchData;
 
 @end
