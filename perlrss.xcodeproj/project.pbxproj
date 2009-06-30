@@ -10,6 +10,7 @@
 		8DD76F9A0486AA7600D96B5E /* perlrss.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* perlrss.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		8DD76F9F0486AA7600D96B5E /* perlrss.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* perlrss.1 */; };
+		E177CBE10FF9938D005DA5A7 /* Rss.m in Sources */ = {isa = PBXBuildFile; fileRef = E177CBE00FF9938D005DA5A7 /* Rss.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		32A70AAB03705E1F00C91783 /* perlrss_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perlrss_Prefix.pch; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* perlrss */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = perlrss; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859EA3029092ED04C91782 /* perlrss.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = perlrss.1; sourceTree = "<group>"; };
+		E177CBDF0FF9938D005DA5A7 /* Rss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rss.h; sourceTree = "<group>"; };
+		E177CBE00FF9938D005DA5A7 /* Rss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rss.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			children = (
 				32A70AAB03705E1F00C91783 /* perlrss_Prefix.pch */,
 				08FB7796FE84155DC02AAC07 /* perlrss.m */,
+				E177CBDF0FF9938D005DA5A7 /* Rss.h */,
+				E177CBE00FF9938D005DA5A7 /* Rss.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD76F9A0486AA7600D96B5E /* perlrss.m in Sources */,
+				E177CBE10FF9938D005DA5A7 /* Rss.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
