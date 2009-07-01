@@ -328,17 +328,21 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E189B2680FFBC82100F702AA</string>
+										<string>E189B2DA0FFBE5CD00F702AA</string>
 										<key>history</key>
 										<array>
-											<string>E189B24F0FFBC70300F702AA</string>
 											<string>E189B2500FFBC70300F702AA</string>
-											<string>E189B2650FFBC7D600F702AA</string>
+											<string>E189B2BE0FFBE02D00F702AA</string>
+											<string>E189B2D80FFBE58C00F702AA</string>
 										</array>
 										<key>prevStack</key>
 										<array>
 											<string>E189B2520FFBC70300F702AA</string>
 											<string>E189B2530FFBC70300F702AA</string>
+											<string>E189B26D0FFBD38E00F702AA</string>
+											<string>E189B26E0FFBD38E00F702AA</string>
+											<string>E189B2C00FFBE02D00F702AA</string>
+											<string>E189B2C10FFBE02D00F702AA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -647,6 +651,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>E189B2770FFBDA2500F702AA</string>
+		<string>E189B2780FFBDA2500F702AA</string>
 		<string>/Users/robert/project/perlrss/perlrss.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
