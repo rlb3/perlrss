@@ -3,6 +3,7 @@
 
 @interface Rss : NSObject {
     NSArray *itemNodes;
+    NSString *theUrl;
 }
 
 @property (readonly) NSArray *itemNodes;

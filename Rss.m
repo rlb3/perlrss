@@ -41,8 +41,9 @@
     NSError       *error;
     NSXMLDocument *doc;
     NSURLResponse *response;
+    theUrl = [NSString stringWithString:@"http://search.cpan.org/uploads.rdf"];
 
-    theRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://search.cpan.org/uploads.rdf"]
+    theRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:theUrl]
                                   cachePolicy:NSURLRequestUseProtocolCachePolicy
                               timeoutInterval:30];
     
