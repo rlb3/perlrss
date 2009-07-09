@@ -27,6 +27,7 @@ int main (int argc, const char * argv[]) {
         [email sendWithModules:changedModules];
     }
 
+    [Email release];
     [updateModules release];
     [pool drain];
     return 0;

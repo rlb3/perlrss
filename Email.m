@@ -4,24 +4,26 @@
 
 @synthesize config;
 
-- (Email *)initWithConfig:(NSDictionary *) aDict {
+- (Email *)initWithConfig:(NSDictionary *) aConfig {
     self = [super init];
     
     if (self) {
-        self.config = aDict;
+        self.config = aConfig;
     }
     return self;
 }
 
 - (void)sendWithModules:(NSArray *) modules {
     CTCoreMessage *Msg = [[CTCoreMessage alloc] init];
-    [Msg setTo:[NSSet setWithObject:[CTCoreAddress addressWithName:[config objectForKey:@"toName"] email:[config objectForKey:@"toAddress"]]]];
-    [Msg setFrom:[NSSet setWithObject:[CTCoreAddress addressWithName:[config objectForKey:@"fromName"] email:[config objectForKey:@"fromAddress"]]]];
+    [Msg setTo:[NSSet setWithObject:[CTCoreAddress addressWithName:[config objectForKey:@"toName"]
+                                                             email:[config objectForKey:@"toAddress"]]]];
+    [Msg setFrom:[NSSet setWithObject:[CTCoreAddress addressWithName:[config objectForKey:@"fromName"]
+                                                               email:[config objectForKey:@"fromAddress"]]]];
     [Msg setSubject:@"Updated CPAN Modules"];
     
     NSMutableString *body = [NSMutableString string];
     for (NSDictionary *dict in modules) {
-        [body appendFormat:@"%@ %@\n", [dict objectForKey:@"name"], [dict objectForKey:@"version"]];
+        [body appendFormat:@"%@-%@\n", [dict objectForKey:@"name"], [dict objectForKey:@"version"]];
         [dict release];
     }
     [Msg setBody:body];
@@ -33,7 +35,6 @@
                              port:[[config objectForKey:@"mailPort"] intValue]
                            useTLS:YES
                           useAuth:YES];
-    [body release];
     [Msg release];
 }
 

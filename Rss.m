@@ -1,6 +1,5 @@
 #import "Rss.h"
 
-
 @implementation Rss
 
 @synthesize itemNodes;
