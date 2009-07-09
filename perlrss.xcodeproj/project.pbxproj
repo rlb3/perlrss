@@ -10,6 +10,9 @@
 		8DD76F9A0486AA7600D96B5E /* perlrss.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* perlrss.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		8DD76F9F0486AA7600D96B5E /* perlrss.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* perlrss.1 */; };
+		E11DEFD610055D5300272DEC /* Email.m in Sources */ = {isa = PBXBuildFile; fileRef = E11DEFD510055D5300272DEC /* Email.m */; };
+		E11DF0AC100560D400272DEC /* MailCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11DF0AB100560D400272DEC /* MailCore.framework */; };
+		E11DF1491005618500272DEC /* MailCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E11DF0AB100560D400272DEC /* MailCore.framework */; };
 		E177CBE10FF9938D005DA5A7 /* Rss.m in Sources */ = {isa = PBXBuildFile; fileRef = E177CBE00FF9938D005DA5A7 /* Rss.m */; };
 /* End PBXBuildFile section */
 
@@ -20,9 +23,19 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				E11DF1491005618500272DEC /* MailCore.framework in CopyFiles */,
 				8DD76F9F0486AA7600D96B5E /* perlrss.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		E11DF14F100561C000272DEC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -32,6 +45,9 @@
 		32A70AAB03705E1F00C91783 /* perlrss_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perlrss_Prefix.pch; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* perlrss */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = perlrss; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859EA3029092ED04C91782 /* perlrss.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = perlrss.1; sourceTree = "<group>"; };
+		E11DEFD410055D5300272DEC /* Email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Email.h; sourceTree = "<group>"; };
+		E11DEFD510055D5300272DEC /* Email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Email.m; sourceTree = "<group>"; };
+		E11DF0AB100560D400272DEC /* MailCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MailCore.framework; path = /Library/Frameworks/MailCore.framework; sourceTree = "<absolute>"; };
 		E177CBDF0FF9938D005DA5A7 /* Rss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rss.h; sourceTree = "<group>"; };
 		E177CBE00FF9938D005DA5A7 /* Rss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rss.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
+				E11DF0AC100560D400272DEC /* MailCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +83,8 @@
 				08FB7796FE84155DC02AAC07 /* perlrss.m */,
 				E177CBDF0FF9938D005DA5A7 /* Rss.h */,
 				E177CBE00FF9938D005DA5A7 /* Rss.m */,
+				E11DEFD410055D5300272DEC /* Email.h */,
+				E11DEFD510055D5300272DEC /* Email.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -73,6 +92,7 @@
 		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				E11DF0AB100560D400272DEC /* MailCore.framework */,
 				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
 			);
 			name = "External Frameworks and Libraries";
@@ -104,6 +124,7 @@
 				8DD76F990486AA7600D96B5E /* Sources */,
 				8DD76F9B0486AA7600D96B5E /* Frameworks */,
 				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+				E11DF14F100561C000272DEC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -139,6 +160,7 @@
 			files = (
 				8DD76F9A0486AA7600D96B5E /* perlrss.m in Sources */,
 				E177CBE10FF9938D005DA5A7 /* Rss.m in Sources */,
+				E11DEFD610055D5300272DEC /* Email.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +172,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/MailCore\"",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -166,6 +193,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/MailCore\"",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = perlrss_Prefix.pch;
