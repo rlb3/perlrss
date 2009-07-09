@@ -9,8 +9,7 @@ int main (int argc, const char * argv[]) {
     NSMutableArray    *seen           = [NSMutableArray arrayWithContentsOfFile:@"/Users/robert/projects/perlrss/seen.plist"];
     NSMutableArray    *changedModules = [NSMutableArray array];
     NSMutableArray    *updateModules  = [[[Rss alloc] init] fetchData];
-    Email *email                      = [[Email alloc] initWithDict:config];
-
+    Email             *email          = [[Email alloc] initWithConfig:config];
 
     for (NSDictionary *dict in updateModules) {
         NSString *fullModule = [[dict objectForKey:@"name"] stringByAppendingString:[dict objectForKey:@"version"]];
@@ -23,10 +22,12 @@ int main (int argc, const char * argv[]) {
     }
 
     [seen writeToFile:@"/Users/robert/projects/perlrss/seen.plist" atomically:YES];
-    [email sendWithArray:changedModules];
+
+    if ([changedModules count] != 0) {
+        [email sendWithModules:changedModules];
+    }
 
     [updateModules release];
-    [email release];
     [pool drain];
     return 0;
 }

@@ -2,16 +2,18 @@
 
 @implementation Email
 
-- (Email *)initWithDict:(NSDictionary *) aDict {
+@synthesize config;
+
+- (Email *)initWithConfig:(NSDictionary *) aDict {
     self = [super init];
     
     if (self) {
-        config = aDict;
+        self.config = aDict;
     }
     return self;
 }
 
-- (void)sendWithArray:(NSArray *) modules {
+- (void)sendWithModules:(NSArray *) modules {
     CTCoreMessage *Msg = [[CTCoreMessage alloc] init];
     [Msg setTo:[NSSet setWithObject:[CTCoreAddress addressWithName:[config objectForKey:@"toName"] email:[config objectForKey:@"toAddress"]]]];
     [Msg setFrom:[NSSet setWithObject:[CTCoreAddress addressWithName:[config objectForKey:@"fromName"] email:[config objectForKey:@"fromAddress"]]]];
@@ -20,6 +22,7 @@
     NSMutableString *body = [NSMutableString string];
     for (NSDictionary *dict in modules) {
         [body appendFormat:@"%@ %@\n", [dict objectForKey:@"name"], [dict objectForKey:@"version"]];
+        [dict release];
     }
     [Msg setBody:body];
     
@@ -30,6 +33,7 @@
                              port:[[config objectForKey:@"mailPort"] intValue]
                            useTLS:YES
                           useAuth:YES];
+    [body release];
     [Msg release];
 }
 

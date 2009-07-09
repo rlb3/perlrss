@@ -278,7 +278,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
+									<integer>7</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -301,7 +301,7 @@
 							<real>289</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>0 109 1920 1069 0 0 1920 1178 </string>
+						<string>16 109 1920 1069 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>E124A35B0FF7EAB0007B924E</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>perlrss.m</string>
+								<string>Email.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,19 +327,19 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>E124A35C0FF7EAB0007B924E</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>perlrss.m</string>
+										<string>Email.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E11DF20E1005722200272DEC</string>
+										<string>E11DF35910061AFF00272DEC</string>
 										<key>history</key>
 										<array>
-											<string>E11DF1831005670E00272DEC</string>
-											<string>E11DF1B710056D7300272DEC</string>
-											<string>E11DF1D810056F8A00272DEC</string>
 											<string>E11DF1FA1005714400272DEC</string>
-											<string>E11DF2061005719600272DEC</string>
-											<string>E11DF2071005719600272DEC</string>
+											<string>E11DF35010061AFF00272DEC</string>
+											<string>E11DF35110061AFF00272DEC</string>
+											<string>E11DF35210061AFF00272DEC</string>
+											<string>E11DF35310061AFF00272DEC</string>
+											<string>E11DF35410061AFF00272DEC</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -352,6 +352,40 @@
 											<string>E11DF1FF1005714400272DEC</string>
 											<string>E11DF2011005714400272DEC</string>
 											<string>E11DF2081005719600272DEC</string>
+											<string>E11DF21410058DF700272DEC</string>
+											<string>E11DF21510058DF700272DEC</string>
+											<string>E11DF2C8100615FA00272DEC</string>
+											<string>E11DF2C9100615FA00272DEC</string>
+											<string>E11DF2D41006163A00272DEC</string>
+											<string>E11DF2D51006163A00272DEC</string>
+											<string>E11DF2DB1006164900272DEC</string>
+											<string>E11DF2E0100616BF00272DEC</string>
+											<string>E11DF2E1100616BF00272DEC</string>
+											<string>E11DF2E2100616BF00272DEC</string>
+											<string>E11DF2E71006173000272DEC</string>
+											<string>E11DF2E81006173000272DEC</string>
+											<string>E11DF2E91006173000272DEC</string>
+											<string>E11DF2EA1006173000272DEC</string>
+											<string>E11DF2EB1006173000272DEC</string>
+											<string>E11DF2EC1006173000272DEC</string>
+											<string>E11DF2F1100617E100272DEC</string>
+											<string>E11DF32E100619DA00272DEC</string>
+											<string>E11DF32F100619DA00272DEC</string>
+											<string>E11DF330100619DA00272DEC</string>
+											<string>E11DF331100619DA00272DEC</string>
+											<string>E11DF332100619DA00272DEC</string>
+											<string>E11DF333100619DA00272DEC</string>
+											<string>E11DF334100619DA00272DEC</string>
+											<string>E11DF335100619DA00272DEC</string>
+											<string>E11DF336100619DA00272DEC</string>
+											<string>E11DF337100619DA00272DEC</string>
+											<string>E11DF338100619DA00272DEC</string>
+											<string>E11DF34310061A3200272DEC</string>
+											<string>E11DF34410061A3200272DEC</string>
+											<string>E11DF35510061AFF00272DEC</string>
+											<string>E11DF35610061AFF00272DEC</string>
+											<string>E11DF35710061AFF00272DEC</string>
+											<string>E11DF35810061AFF00272DEC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -367,7 +401,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1609, 880}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 109 1920 1069 0 0 1920 1178 </string>
+								<string>16 109 1920 1069 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -391,8 +425,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1609, 116}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 109 1920 1069 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -447,6 +479,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1609, 116}}</string>
+										<key>RubberWindowFrame</key>
+										<string>16 109 1920 1069 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -660,10 +694,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>E11DF21B10058E3500272DEC</string>
+		<string>E11DF21C10058E3500272DEC</string>
 		<string>/Users/robert/projects/perlrss/perlrss.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>0 109 1920 1069 0 0 1920 1178 </string>
+	<string>16 109 1920 1069 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

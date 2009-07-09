@@ -5,6 +5,8 @@
     NSDictionary *config;
 }
 
-- (Email *)initWithDict:(NSDictionary *) aDict;
-- (void)sendWithArray:(NSArray *) modules;
+@property (copy) NSDictionary *config;
+
+- (Email *)initWithConfig:(NSDictionary *) aDict;
+- (void)sendWithModules:(NSArray *) modules;
 @end
